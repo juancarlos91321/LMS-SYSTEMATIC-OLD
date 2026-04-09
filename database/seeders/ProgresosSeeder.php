@@ -5,11 +5,11 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ProgresoSeeder extends Seeder
+class ProgresosSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('progreso')->insert([
+        DB::table('progresos')->insert([
             [
                 'idmatricula' => 1,
                 'porcentaje' => 20.0,
