@@ -22,6 +22,7 @@ return new class extends Migration {
             $table->date('fechafin');
             $table->integer('intentospermitidos');
             $table->boolean('activo');
+            $table->timestamps();
         });
     }
 
