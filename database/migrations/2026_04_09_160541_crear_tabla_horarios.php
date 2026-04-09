@@ -24,6 +24,7 @@ return new class extends Migration {
      */
     public function down(): void
     {
+        // Drop de la tabla 'horarios' si existe
         Schema::dropIfExists('horarios');
     }
 };
