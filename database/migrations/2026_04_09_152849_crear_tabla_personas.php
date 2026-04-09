@@ -30,6 +30,7 @@ return new class extends Migration {
      */
     public function down(): void
     {
+        // Eliminar la tabla 'personas' si existe
         Schema::dropIfExists('personas');
     }
 };
