@@ -26,6 +26,7 @@ return new class extends Migration {
      */
     public function down(): void
     {
+        // Drop de la tabla 'capacitaciones' si existe
         Schema::dropIfExists('capacitaciones');
     }
 };
