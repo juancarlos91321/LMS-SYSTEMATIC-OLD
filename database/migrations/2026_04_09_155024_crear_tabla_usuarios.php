@@ -28,6 +28,7 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // Drop de la tabla 'usuarios' si existe
         Schema::dropIfExists('usuarios');
     }
 };
