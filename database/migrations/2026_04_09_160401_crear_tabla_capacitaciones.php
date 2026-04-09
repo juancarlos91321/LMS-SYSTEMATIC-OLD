@@ -12,12 +12,12 @@ return new class extends Migration {
     {
         Schema::create('capacitaciones', function (Blueprint $table) {
             $table->id('idcapacitacion');
-            $table->foreignId('idcurso')->constrained('cursos');
+            $table->foreignId('idcurso')->constrained('cursos', 'idcurso');
             $table->string('modalidad');
             $table->decimal('precio', 8, 2);
             $table->date('fechacreacion');
-            $table->foreignId('idprofesor')->constrained('usuarios');
-            $table->foreignId('idadministrador')->constrained('usuarios');
+            $table->foreignId('idprofesor')->constrained('usuarios', 'idusuario');
+            $table->foreignId('idadministrador')->constrained('usuarios', 'idusuario');
         });
     }
 
