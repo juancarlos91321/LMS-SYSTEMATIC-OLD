@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->date('fecha');
             $table->decimal('amortizacion', 8, 2);
             $table->decimal('saldo', 8, 2);
+            $table->timestamps();
         });
     }
 
