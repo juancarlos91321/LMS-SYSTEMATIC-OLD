@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->timestamp('fechacreacion')->nullable();
             $table->time('fechamodificacion')->nullable();
             $table->string('nivelacceso');
+            $table->timestamps();
         });
     }
 
