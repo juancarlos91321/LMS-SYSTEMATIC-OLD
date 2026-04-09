@@ -22,6 +22,7 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // Eliminar la tabla 'metodospagos' si existe
         Schema::dropIfExists("metodospagos");
     }
 };
