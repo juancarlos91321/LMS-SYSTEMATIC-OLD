@@ -12,9 +12,9 @@ return new class extends Migration {
     {
         Schema::create('respuestas', function (Blueprint $table) {
             $table->id('idrespuesta');
-            $table->foreignId('idopcion')->constrained('opciones');
-            $table->foreignId('idevaluacion')->constrained('evaluaciones');
-            $table->foreignId('idmatricula')->constrained('matriculas');
+            $table->foreignId('idopcion')->constrained('opciones', 'idopcion');
+            $table->foreignId('idevaluacion')->constrained('evaluaciones', 'idevaluacion');
+            $table->foreignId('idmatricula')->constrained('matriculas', 'idmatricula');
             $table->date('fechainterto');
             $table->integer('puntaje');
             $table->string('estado');
