@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('opciones', function (Blueprint $table) {
             $table->id('idopcion');
-            $table->foreignId('idpregunta')->constrained('preguntas');
+            $table->foreignId('idpregunta')->constrained('preguntas', 'idpregunta');
             $table->text('textoopcion');
             $table->boolean('respuestacorrecta');
         });
