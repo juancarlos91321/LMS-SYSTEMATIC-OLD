@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->integer('becaporcentual')->default(0);
             $table->foreignId('idalumno')->constrained('usuarios', 'idusuario');
             $table->foreignId('idadministrador')->constrained('usuarios', 'idusuario');
+            $table->timestamps();
         });
     }
 
