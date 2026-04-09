@@ -18,6 +18,7 @@ return new class extends Migration {
             $table->date('fechacreacion');
             $table->foreignId('idprofesor')->constrained('usuarios', 'idusuario');
             $table->foreignId('idadministrador')->constrained('usuarios', 'idusuario');
+            $table->timestamps();
         });
     }
 
