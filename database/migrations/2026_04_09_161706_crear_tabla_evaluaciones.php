@@ -12,8 +12,8 @@ return new class extends Migration {
     {
         Schema::create('evaluaciones', function (Blueprint $table) {
             $table->id('idevaluacion');
-            $table->foreignId('idcurso')->constrained('cursos');
-            $table->foreignId('idprofesor')->constrained('usuarios');
+            $table->foreignId('idcurso')->constrained('cursos', 'idcurso');
+            $table->foreignId('idprofesor')->constrained('usuarios', 'idusuario');
             $table->string('titulo');
             $table->text('descripcion')->nullable();
             $table->integer('puntajemaximo');
