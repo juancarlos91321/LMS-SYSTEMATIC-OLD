@@ -18,6 +18,7 @@ return new class extends Migration {
             $table->text('descripcion')->nullable();
             $table->integer('cantidadhoras');
             $table->decimal('precioreferencial', 10, 2);
+            $table->timestamps();
         });
     }
 
