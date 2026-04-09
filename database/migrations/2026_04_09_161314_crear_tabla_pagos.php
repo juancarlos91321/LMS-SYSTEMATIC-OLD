@@ -25,6 +25,7 @@ return new class extends Migration {
      */
     public function down(): void
     {
+        // Drop de la tabla 'pagos' si existe
         Schema::dropIfExists('pagos');
     }
 };
