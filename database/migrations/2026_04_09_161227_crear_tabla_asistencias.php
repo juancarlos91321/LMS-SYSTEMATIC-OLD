@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('asistencias', function (Blueprint $table) {
             $table->id('idasistencia');
-            $table->foreignId('idhorario')->constrained('horarios');
+            $table->foreignId('idhorario')->constrained('horarios', 'idhorario');
             $table->string('asistencia');
         });
     }
