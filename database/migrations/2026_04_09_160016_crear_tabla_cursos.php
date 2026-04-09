@@ -4,16 +4,15 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('cursos', function (blueprint $table) {
+        Schema::create('cursos', function (Blueprint $table) {
             $table->id('idcurso');
-            $table->foreignId('idespecialidad')->constrained('especialidades');
+            $table->foreignId('idespecialidad')->constrained('especialidades', 'idespecialidad');
             $table->string('pathbanner')->nullable();
             $table->string('titulo');
             $table->text('descripcion')->nullable();
