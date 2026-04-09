@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->decimal('porcentaje', 5, 2);
             $table->date('fechaactividad');
             $table->string('estado');
+            $table->timestamps();
         });
     }
 
