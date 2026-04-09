@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('preguntas', function (Blueprint $table) {
             $table->id('idpregunta');
-            $table->foreignId('idevaluacion')->constrained('evaluaciones');
+            $table->foreignId('idevaluacion')->constrained('evaluaciones', 'idevaluacion');
             $table->text('textopregunta');
             $table->integer('puntaje');
             $table->integer('orden');
