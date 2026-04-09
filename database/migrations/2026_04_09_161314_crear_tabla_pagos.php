@@ -12,8 +12,8 @@ return new class extends Migration {
     {
         Schema::create('pagos', function (Blueprint $table) {
             $table->id('idpago');
-            $table->foreignId('idmatricula')->constrained('matriculas');
-            $table->foreignId('idmetodo')->constrained('metodospago');
+            $table->foreignId('idmatricula')->constrained('matriculas', 'idmatricula');
+            $table->foreignId('idmetodo')->constrained('metodospago', 'idmetodo');
             $table->date('fecha');
             $table->decimal('amortizacion', 8, 2);
             $table->decimal('saldo', 8, 2);
