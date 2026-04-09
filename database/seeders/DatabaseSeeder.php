@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             HorariosSeeder::class,
             AsistenciasSeeder::class,
             PagosSeeder::class,
-            ProgresoSeeder::class,
+            ProgresosSeeder::class,
             EvaluacionesSeeder::class,
             PreguntasSeeder::class,
             OpcionesSeeder::class,
