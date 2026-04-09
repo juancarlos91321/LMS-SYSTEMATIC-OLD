@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('progresos', function (Blueprint $table) {
             $table->id('idprogreso');
-            $table->foreignId('idmatricula')->constrained('matriculas');
+            $table->foreignId('idmatricula')->constrained('matriculas', 'idmatricula');
             $table->decimal('porcentaje', 5, 2);
             $table->date('fechaactividad');
             $table->string('estado');
