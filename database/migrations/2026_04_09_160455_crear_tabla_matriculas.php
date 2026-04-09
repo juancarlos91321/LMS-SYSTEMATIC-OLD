@@ -12,11 +12,11 @@ return new class extends Migration {
     {
         Schema::create('matriculas', function (Blueprint $table) {
             $table->id('idmatricula');
-            $table->foreignId('idcapacitacion')->constrained('capacitaciones');
+            $table->foreignId('idcapacitacion')->constrained('capacitaciones', 'idcapacitacion');
             $table->date('fechamatricula');
             $table->integer('becaporcentual')->default(0);
-            $table->foreignId('idalumno')->constrained('usuarios');
-            $table->foreignId('idadministrador')->constrained('usuarios');
+            $table->foreignId('idalumno')->constrained('usuarios', 'idusuario');
+            $table->foreignId('idadministrador')->constrained('usuarios', 'idusuario');
         });
     }
 
