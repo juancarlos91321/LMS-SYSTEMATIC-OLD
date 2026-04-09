@@ -5,11 +5,11 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class MetodosPagoSeeder extends Seeder
+class MetodosPagosSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('metodospago')->insert([
+        DB::table('metodospagos')->insert([
             ['metodopago' => 'Efectivo'],
             ['metodopago' => 'Tarjeta de Crédito'],
             ['metodopago' => 'Transferencia Bancaria'],
