@@ -13,22 +13,36 @@ class UsuariosSeeder extends Seeder
         DB::table('usuarios')->insert([
             [
                 'idpersona' => 1,
-                'nomuser' => 'juanp',
-                'password' => Hash::make('password123'),
-                'estado' => 'activo',
+                'username' => 'juan.gomez',
+                'password' => Hash::make('123456'),
+                'estado' => 'A',
                 'fechacreacion' => now(),
-                'fechamodificacion' => now(),
-                'nivelacceso' => 'administrador',
+                'fechamodificacion' => now()
             ],
             [
                 'idpersona' => 2,
-                'nomuser' => 'anag',
-                'password' => Hash::make('password123'),
-                'estado' => 'activo',
+                'username' => 'maria.lopez',
+                'password' => Hash::make('123456'),
+                'estado' => 'A',
                 'fechacreacion' => now(),
-                'fechamodificacion' => now(),
-                'nivelacceso' => 'profesor',
+                'fechamodificacion' => now()
             ],
+            [
+                'idpersona' => 3,
+                'username' => 'luis.torres',
+                'password' => Hash::make('123456'),
+                'estado' => 'A',
+                'fechacreacion' => now(),
+                'fechamodificacion' => now()
+            ],
+            [
+                'idpersona' => 4,
+                'username' => 'ana.rojas',
+                'password' => Hash::make('123456'),
+                'estado' => 'A',
+                'fechacreacion' => now(),
+                'fechamodificacion' => now()
+            ]
         ]);
     }
 }

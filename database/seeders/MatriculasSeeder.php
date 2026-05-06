@@ -12,11 +12,44 @@ class MatriculasSeeder extends Seeder
         DB::table('matriculas')->insert([
             [
                 'idcapacitacion' => 1,
+                'idalumno' => 4,
+                'idadministrador' => 1,
                 'fechamatricula' => now(),
-                'becaporcentual' => 0,
+                'becaporcentaje' => '10%',
+                'estado' => 'A'
+            ],
+            [
+                'idcapacitacion' => 2,
+                'idalumno' => 4,
+                'idadministrador' => 1,
+                'fechamatricula' => now(),
+                'becaporcentaje' => null,
+                'estado' => 'A'
+            ],
+            [
+                'idcapacitacion' => 3,
                 'idalumno' => 2,
                 'idadministrador' => 1,
+                'fechamatricula' => now(),
+                'becaporcentaje' => '5%',
+                'estado' => 'A'
             ],
+            [
+                'idcapacitacion' => 4,
+                'idalumno' => 3,
+                'idadministrador' => 1,
+                'fechamatricula' => now(),
+                'becaporcentaje' => null,
+                'estado' => 'A'
+            ],
+            [
+                'idcapacitacion' => 5,
+                'idalumno' => 4,
+                'idadministrador' => 1,
+                'fechamatricula' => now(),
+                'becaporcentaje' => '15%',
+                'estado' => 'A'
+            ]
         ]);
     }
 }

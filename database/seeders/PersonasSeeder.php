@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PersonasSeeder extends Seeder
 {
@@ -11,32 +11,57 @@ class PersonasSeeder extends Seeder
     {
         DB::table('personas')->insert([
             [
-                'apellidos' => 'Pérez',
-                'nombres' => 'Juan',
+                'apellidos' => 'Gomez Perez',
+                'nombres' => 'Juan Carlos',
                 'tipodoc' => 'DNI',
-                'nrodoc' => '12345678',
+                'numdoc' => '12345678',
                 'telefono' => '987654321',
-                'direccion' => 'Av. Lima 123',
-                'email' => 'juan.perez@email.com',
+                'direccion' => 'Av. Siempre Viva 123',
+                'email' => 'juan@example.com',
                 'genero' => 'M',
-                'fechanac' => '1990-01-01',
+                'fechanac' => '1990-05-10',
                 'created_at' => now(),
-                'updated_at' => now(),
+                'updated_at' => now()
             ],
             [
-                'apellidos' => 'Gómez',
-                'nombres' => 'Ana',
+                'apellidos' => 'Lopez Ramirez',
+                'nombres' => 'Maria Elena',
                 'tipodoc' => 'DNI',
-                'nrodoc' => '87654321',
+                'numdoc' => '87654321',
                 'telefono' => '912345678',
-                'direccion' => 'Calle Falsa 456',
-                'email' => 'ana.gomez@email.com',
+                'direccion' => 'Jr. Las Flores 456',
+                'email' => 'maria@example.com',
                 'genero' => 'F',
-                'fechanac' => '1992-05-12',
+                'fechanac' => '1995-08-20',
                 'created_at' => now(),
-                'updated_at' => now(),
+                'updated_at' => now()
             ],
+            [
+                'apellidos' => 'Torres Diaz',
+                'nombres' => 'Luis Alberto',
+                'tipodoc' => 'DNI',
+                'numdoc' => '45678912',
+                'telefono' => '998877665',
+                'direccion' => 'Calle Sol 789',
+                'email' => 'luis@example.com',
+                'genero' => 'M',
+                'fechanac' => '1988-03-15',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'apellidos' => 'Rojas Castillo',
+                'nombres' => 'Ana Lucia',
+                'tipodoc' => 'DNI',
+                'numdoc' => '74125896',
+                'telefono' => '955443322',
+                'direccion' => 'Av. Perú 321',
+                'email' => 'ana@example.com',
+                'genero' => 'F',
+                'fechanac' => '2000-11-05',
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
         ]);
     }
-
 }

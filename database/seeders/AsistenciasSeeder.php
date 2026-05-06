@@ -12,8 +12,29 @@ class AsistenciasSeeder extends Seeder
         DB::table('asistencias')->insert([
             [
                 'idhorario' => 1,
-                'asistencia' => 'presente',
+                'idmatricula' => 1,
+                'asistencia' => 'Presente'
             ],
+            [
+                'idhorario' => 2,
+                'idmatricula' => 2,
+                'asistencia' => 'Presente'
+            ],
+            [
+                'idhorario' => 3,
+                'idmatricula' => 3,
+                'asistencia' => 'Tardanza'
+            ],
+            [
+                'idhorario' => 4,
+                'idmatricula' => 4,
+                'asistencia' => 'Falta'
+            ],
+            [
+                'idhorario' => 5,
+                'idmatricula' => 5,
+                'asistencia' => 'Presente'
+            ]
         ]);
     }
 }
